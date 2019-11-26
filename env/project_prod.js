@@ -2,7 +2,7 @@ module.exports = global.Project = {
     debug: false,
     env: 'prod', // This is used for Sentry tracking
     bulletTrain: '4vfqhypYjcPoGGu8ByrBaj', // This is our Bullet Train API key - Bullet Train runs on Bullet Train!
-    api: 'https://api.bullet-train.io/api/v1/',
+    api: 'https://ab-bullet-train-api.herokuapp.com/api/v1/',
     ga: 'UA-120237963-1', // This is our Google Analytics key
     sentry: 'https://11c8828dc24041b0a875e324b0380769@sentry.io/1320942',
     demoAccount: {
