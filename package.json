@@ -8,6 +8,7 @@
     "test": "cross-env E2E=true nightwatch ./tests/index.test.js",
     "env": "node ./bin/env.js",
     "start": "cross-env NODE_ENV=production node ./server",
+    "build": "npm run env && npm run bundle",
     "dev": "cross-env npm run env && node_modules/.bin/nodemon --watch server --ignore server/config/config.json --watch webpack --exec node ./server",
     "bundle": "node node_modules/.bin/webpack -p --progress --config ./webpack/webpack.config.prod.js",
     "bundlestaging": "node node_modules/.bin/webpack -p --progress --config ./webpack/webpack.config.staging.js",
